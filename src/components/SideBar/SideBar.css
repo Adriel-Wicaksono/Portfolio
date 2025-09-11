@@ -1,0 +1,26 @@
+header {
+    height: 100%; 
+    width: 160px; 
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background-color: #2c2f33; 
+}
+
+.sideBarLogo {
+    height: 80px;
+    width: 80px;
+    margin-left: 0;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 225px;
+}
+
+nav > a {
+    margin-top: 40px;
+    color: #00a2ff;
+}
