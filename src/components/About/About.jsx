@@ -5,12 +5,13 @@ import jsLogo from "../../assets/jsLogo.png"
 import htmlLogo from "../../assets/html-logo.png"
 import cssLogo from "../../assets/css-logo.png"
 import pythonLogo from "../../assets/python-logo.png"
+import javaLogo from "../../assets/java-logo.png"
 
 function About() {
     return (
         <>
             <SideBar />
-            <div>
+            <div className="aboutText">
                 <p>
                     Driven by a commitment to continuous growth, I aim to thrive on transforming
                     complex challenges into elegant software solutions. My journey in software 
@@ -21,12 +22,13 @@ function About() {
                     you'll find me enjoying the outdoors, hitting the trails for a run, or rock climbing.
                 </p>
             </div>
-            <div>
+            <div className="logos">
                 <img src={reactLogo} alt="React Logo" />
                 <img src={jsLogo} alt="Javascript Logo" />
                 <img src={htmlLogo} alt="HTML Logo" />
                 <img src={cssLogo} alt="CSS Logo" />
                 <img src={pythonLogo} alt="Python Logo" />
+                <img src={javaLogo} alt="Java Logo" />
             </div>
     
         </>

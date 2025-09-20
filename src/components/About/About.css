@@ -1,5 +1,28 @@
-div {
+p {
     width: 50%;
     position: relative;
-    left: -8rem;
+    left: -15rem;
+    top: 5rem;
+}
+
+img {
+    width: 8%;
+    height: 8%;
+}
+
+.logos {
+    position: relative;
+    left: 40rem;
+    bottom: 10rem;
+}
+
+.aboutText {
+    opacity: 0%;
+    animation-name: slideInText;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideInText {
+    to {opacity: 100%;}
 }

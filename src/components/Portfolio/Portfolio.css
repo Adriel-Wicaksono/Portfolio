@@ -1,2 +1,8 @@
-
-
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: -60rem;
+    bottom: 20rem;
+}

@@ -17,8 +17,8 @@ body {
 
 .Intro {
     position: absolute;
-    top: 550px;
-    right: 1085px;
+    top: 450px;
+    right: 750px;
     opacity: 0%;
     animation-name: slideInText;
     animation-duration: 4s;
