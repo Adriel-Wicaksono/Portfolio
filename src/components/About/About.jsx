@@ -6,6 +6,7 @@ import htmlLogo from "../../assets/html-logo.png"
 import cssLogo from "../../assets/css-logo.png"
 import pythonLogo from "../../assets/python-logo.png"
 import javaLogo from "../../assets/java-logo.png"
+import nodeJSLogo from "../../assets/NodeJS logo.png"
 
 function About() {
     return (
@@ -23,12 +24,19 @@ function About() {
                 </p>
             </div>
             <div className="logos">
-                <img src={reactLogo} alt="React Logo" />
-                <img src={jsLogo} alt="Javascript Logo" />
-                <img src={htmlLogo} alt="HTML Logo" />
-                <img src={cssLogo} alt="CSS Logo" />
-                <img src={pythonLogo} alt="Python Logo" />
-                <img src={javaLogo} alt="Java Logo" />
+                <div className="layer1">
+                    <img src={reactLogo} alt="React Logo" />
+                    <img src={nodeJSLogo} alt="NodeJS Logo" />
+                </div>
+                <div className="layer2">
+                    <img src={htmlLogo} alt="HTML Logo" />
+                    <img className="cssLogo" src={cssLogo} alt="CSS Logo" />
+                    <img src={jsLogo} alt="Javascript Logo" />
+                </div>
+                <div className="layer3">
+                    <img className="java" src={javaLogo} alt="Java Logo" />
+                    <img src={pythonLogo} alt="Python Logo" />
+                </div>
             </div>
     
         </>

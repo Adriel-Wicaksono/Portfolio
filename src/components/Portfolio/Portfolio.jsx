@@ -9,7 +9,7 @@ export default function Portfolio() {
             <div className="projects">
                 <div className="project1">
                     <Button name="Youtube Drive" url="https://cmsc335final-rrek.onrender.com/" background="white"/>
-                </div>
+                </div>  
             </div>
         </>
         
