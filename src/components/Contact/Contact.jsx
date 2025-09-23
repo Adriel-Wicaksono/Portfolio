@@ -1,7 +1,31 @@
 import "./Contact.css"
 import SideBar from "../SideBar/SideBar"
+import emailjs from "@emailjs/browser"
+import { useRef } from "react"
 
 export default function Contact() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        ).then(
+            () => {
+                alert("Your message has been sent successfully. I will respond as soon as possible.")
+                form.current.reset();
+            },
+            () => {
+                alert("There was an error sending your message. Please try again.")
+            }
+        );
+    }
+
     return (
         <>
             <SideBar />
@@ -12,11 +36,11 @@ export default function Contact() {
                     Please don't hesitate to get in touch with me by filling out the contact form.
                 </p>
 
-                <form className="contact-form" action="https://formspree.io/f/mnqyojwp" method="POST">
+                <form ref={form} onSubmit={sendEmail}>
                 
                     <div className="form-group">
-                        <input className="text" placeholder="Name" type="text" id="name" name="name" required />
-                        <input className="text"placeholder="Email" type="email" id="email" name="email" required />
+                        <input className="text" placeholder="Name" type="text" id="name" name="from_name" required />
+                        <input className="text"placeholder="Email" type="email" id="email" name="from_email" required />
                         <textarea className="textbox" placeholder="Message" id="message" name="message" required></textarea>
                         <button type="submit">Send</button>
                     </div>
