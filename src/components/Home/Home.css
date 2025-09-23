@@ -6,7 +6,7 @@ body {
 .homeLogo {
     position: relative;
     width: 40%;
-    top: -400px;
+    top: -500px;
     opacity: 0%;
     animation-name: slideIn;
     animation-duration: 2s;
@@ -18,7 +18,7 @@ body {
 .Intro {
     position: absolute;
     top: 450px;
-    right: 750px;
+    right: 62rem;
     opacity: 0%;
     animation-name: slideInText;
     animation-duration: 4s;
